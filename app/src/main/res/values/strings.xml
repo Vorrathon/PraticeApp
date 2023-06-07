@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">layoutActivtyFragment</string>
+    <string name="logo_app">Logo App</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password_hint">Password</string>
+    <string name="login_txt">Login</string>
+</resources>
