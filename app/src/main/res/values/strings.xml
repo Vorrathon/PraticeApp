@@ -4,4 +4,10 @@
     <string name="e_mail">E-mail</string>
     <string name="password_hint">Password</string>
     <string name="login_txt">Login</string>
+    <string name="forgot_password_txt">Forgot Password</string>
+    <string name="sign_up_txt">Don\'t have a account? Sign up here</string>
+    <string name="username_txt">Username</string>
+    <string name="confirm_password_txt">Confirm Password</string>
+    <string name="sgin_txt">Register</string>
+    <string name="have_accout_txt">Already have an account? Login here</string>
 </resources>

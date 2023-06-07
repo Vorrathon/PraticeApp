@@ -1,0 +1,8 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/primary_dark">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary" />
+            <corners android:radius="8dp" /> <!-- Set the desired radius value in dp -->
+        </shape>
+    </item>
+</ripple>

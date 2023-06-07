@@ -15,7 +15,7 @@
         <FrameLayout
             android:id="@+id/frameLayout"
             android:layout_width="0dp"
-            android:layout_height="275dp"
+            android:layout_height="200dp"
             android:background="@drawable/blue_bg"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,12 +39,12 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:autofillHints=""
-            android:hint="@string/e_mail"
-            android:inputType="textEmailAddress"
+            android:hint="@string/username_txt"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-            tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            tools:ignore="LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
         <EditText
             android:id="@+id/editText2"
@@ -54,52 +54,79 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:autofillHints=""
-            android:hint="@string/password_hint"
-            android:inputType="textPassword"
+
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText"
             tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
-            android:text="@string/login_txt"
+            android:autofillHints=""
+
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText2"
-            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+            tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:hint="@string/confirm_password_txt"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btnconner"
+            android:text="@string/sgin_txt"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText4"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/button2"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
-
-            android:text="@string/forgot_password_txt"
+            android:layout_marginEnd="24dp"
+            android:textSize="15sp"
+            android:text="@string/have_accout_txt"
             android:textAllCaps="false"
             android:textColor="@color/primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/button3"
             tools:ignore="TextContrastCheck" />
 
-        <Button
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_up_txt"
-            android:textAllCaps="false"
-            android:textColor="@color/primary"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2"
-            tools:ignore="TextContrastCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
