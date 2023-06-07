@@ -22,7 +22,7 @@ class ThridFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val btnNext = view.findViewById<Button>(R.id.btnNext)
         btnNext.setOnClickListener {
-            findNavController().navigate(R.id.firstFragment)
+            findNavController().popBackStack(R.id.firstFragment,false)
         }
     }
 }
